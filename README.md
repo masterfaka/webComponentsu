@@ -44,3 +44,5 @@
     > `static get observedAttributes` +  getter and setter to declare custom attributes
  - <code>addoptedCallback()</code>// when <code>document.adoptNode(element)</code> is called
     > NO CONSTRUCTOR is called. not destroyed in this process
+
+> Styling and dynamic styling /2.3 & /2.4 sections check
