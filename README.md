@@ -4,6 +4,7 @@
 
 ### DOCs
 
+- https://html.spec.whatwg.org/ (entrypoint)
 - https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM#working_through_a_simple_example
 - https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-autonomous-example
 
