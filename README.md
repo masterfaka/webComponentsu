@@ -21,3 +21,14 @@
 - You can use the `<my-element> </my-element>` web component on your page the same way as any standard HTML element
 
 </details>
+
+
+> it's a combination of SHadow DOM + Templates
+
+- Shadow dom es independiente del dom(estilos) check ` 1.2 shadow-sample`
+> const shadowRoot = document.getElementById('content').attachShadow({mode: 'open'});
+        shadowRoot.innerHTML =....
+
+- templates (`template` html tag + `importNode` + append it to any hmlt element(body)) check `1.4 index.html`
+
+- check `/1.5/index.html` for full working example rendering **_shadow DOM template_**
