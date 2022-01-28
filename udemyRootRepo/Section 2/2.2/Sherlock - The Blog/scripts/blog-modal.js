@@ -1,5 +1,5 @@
 class BlogModal extends HTMLElement {
-    static get observedAttributes() {
+    static get observedAttributes() {//VERY IMPORTANT!!!
         return ['title', 'content'];
     }
 
@@ -13,21 +13,13 @@ class BlogModal extends HTMLElement {
     }
 
     attributeChangedCallback(attrName, oldValue, newValue) {
-        if(oldValue !== newValue) {
-            this[attrName] = newValue;
-        }
-
-        this.render();
+        if(oldValue !== newValue) { this[attrName] = newValue; }
+        this.render();// no change detection here so we have to rerender.
     }
 
-    get title() {
-        return this.getAttribute('title');
-    }
-
-    get content() {
-        return this.getAttribute('content');
-    }
-
+    //needed getter and setter for custom(anyName) attributes _title | content _
+    get title() { return this.getAttribute('title'); }
+    get content() { return this.getAttribute('content');}
     set title(title_attr) {
         if(title_attr) {
             this.setAttribute('title', title_attr)
@@ -35,7 +27,6 @@ class BlogModal extends HTMLElement {
             this.removeAttribute('title');
         }
     }
-
     set content(content_attr) {
         if(content_attr) {
             this.setAttribute('content', content_attr)
@@ -53,8 +44,10 @@ class BlogModal extends HTMLElement {
         shadowRoot.innerHTML = '';
         if(templateNode) {
             const instance = document.importNode(templateNode.content, true);
-            instance.querySelector('.title').innerHTML = this['title'];
-            instance.querySelector('.content').innerHTML = this['content'];
+            instance.querySelector('.title').innerHTML = this['title']; //
+            instance.querySelector('.content').innerHTML = this['content'];// class attributes names .
+            //could be attributes types!! so we don't need to hardcode
+
             shadowRoot.appendChild(instance);
         }
     }

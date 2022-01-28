@@ -34,11 +34,13 @@
 - check `/1.5/index.html` for full working example rendering **_shadow DOM template_**
 
 ## 2. Components LifeCycle hooks
- - constructor() //mandatory initial setup
+ - <code>constructor()</code>//mandatory initial setup
     > not rendering nor fetch. eventsListeners + initial state + **_creating ShadowDOM_**
- - connectedCallback() //exec when it's added to the DOM
+ - <code>connectedCallback()</code> //exec when it's added to the DOM
     > fetch + render + setAttributes
- - disconectedCallback() //when removed from DOM. check `/2.1/blog-card.js`
+ - <code>disconectedCallback()</code> //when removed from DOM. check `/2.1/blog-card.js`
     > notyfy app + stop timers+ unsubscibe events .good practice
- - attributeChangedCallback(name, oldValue, newValue)
- - addoptedCallback()
+ - <code>attributeChangedCallback(name, oldValue, newValue)</code> //component upgraded, attributes updated. check `/2.2/blog-modal.js`
+    > `static get observedAttributes` +  getter and setter to declare custom attributes
+ - <code>addoptedCallback()</code>// when <code>document.adoptNode(element)</code> is called
+    > NO CONSTRUCTOR is called. not destroyed in this process
