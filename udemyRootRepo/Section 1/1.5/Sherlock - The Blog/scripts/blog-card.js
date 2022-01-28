@@ -6,11 +6,11 @@ const titles = [
 
 class BlogCard extends HTMLElement {
     constructor() {
-        super();
-        this.attachShadow({mode: 'open'});
+        super();//normal standard init
+        this.attachShadow({mode: 'open'}); 
     }
 
-    connectedCallback() { 
+    connectedCallback() { //like ngOnInit. webComponents have lifecycle
         this.render();
     }
 
