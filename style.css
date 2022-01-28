@@ -1,0 +1,4 @@
+/* This will not affect the CSS within local scope of the template */
+h3 {
+  color: red;
+}
