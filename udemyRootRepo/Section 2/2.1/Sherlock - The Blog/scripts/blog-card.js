@@ -14,9 +14,9 @@ class BlogCard extends HTMLElement {
         this.render();
     }
 
-    disconnectedCallback() {
-        console.log('Disconnected from the DOM!');
-    }
+    //this is called when removed from DOM i.e ngOnDestroy()
+    // e.g.document.querySelector('blog-card').remove();
+    disconnectedCallback() { console.log('Disconnected from the DOM!'); }
 
     render() {
         const { shadowRoot } = this;
@@ -38,3 +38,5 @@ class BlogCard extends HTMLElement {
 }
 
 customElements.define('blog-card', BlogCard);
+/*  debugger;
+document.querySelector('blog-card').remove(); */ //this would remove the elemnt from the dom
