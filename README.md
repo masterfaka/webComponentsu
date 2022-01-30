@@ -69,3 +69,6 @@
 
 ### 4.3 Angular js
 - check `/4.3/*` module import + template use + comments on logic and impòrta availability
+
+### 4.4 VUE.js underdog of react
+- check `/4.4/` main app import and `/HellowWorld.vue` use in template part

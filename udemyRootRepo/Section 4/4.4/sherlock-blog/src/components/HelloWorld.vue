@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div> <!-- watch the syntax -->
     <blog-card :title="myTitle" :subtitle="mySubtitle" :cover="myImage"></blog-card>
   </div>
 </template>
