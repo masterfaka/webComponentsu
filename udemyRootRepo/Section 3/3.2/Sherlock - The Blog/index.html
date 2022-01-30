@@ -81,7 +81,7 @@
         let cards = document.getElementsByTagName('blog-card');
         [...cards].forEach(card => {
             card.addEventListener('click', () => {
-                document.querySelector('blog-modal').setAttribute('open', true);
+                document.querySelector('blog-modal').setAttribute('open', true); //this passes data to the attribute
             })
         })
     </script>

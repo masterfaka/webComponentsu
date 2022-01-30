@@ -50,3 +50,6 @@
 ## 3. Custom events
 - <code> Element.addEventListener('evtName', handlerFunction )</code>// ` handlerFunc`can be arrow or anonymous
    > check /3.1/index.html js code comments
+
+- <code> new CustomEvent(name, dataObject) + addEvtListner + dispatchEvent()</code>// 
+   > check /3.2/index.html + blog-modal.js comments
