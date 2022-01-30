@@ -47,7 +47,7 @@
     </template>
     <template id='modal-template'>
         <link rel='stylesheet' href='./styles/blog-modal.css' />
-        <div class='wrapper' class='open'>
+        <div class='wrapper'>
             <div class='overlay'>
                 <div class='modal'>
                     <div class='title'></div>
@@ -89,11 +89,24 @@
         })
 
         let cards = document.getElementsByTagName('blog-card');
-        console.log(cards);
+        console.log(cards);// not an array(it's HTMLCollection) so we use destruct array hacks(check below)
         [...cards].forEach(card => {
             card.addEventListener('click', () => {
                 console.log('Hello');
                 // document.querySelector('blog-modal').open = true;
+                /**NOTE
+                 * To select inside a custom element with template we gotta access shadowDom then querySelect
+                 * <code>document.querySelector('blog-modal').shadowRoot.querySelector('.wrapper')</code>
+                 * but i dont understand what it's intended above with the commented line 
+                */
+                //document.querySelector('blog-modal').shadowRoot.querySelector('.wrapper').open= true;
+                
+                /**I think this is the intention but 
+                 * should also have something to remove the class 
+                 * i.g when x is clicked remove .open class*/
+                
+                 //document.querySelector('blog-modal').shadowRoot.querySelector('.wrapper').classList.add("open")
+                //commented because not in spec of this lesson; check console to see log dispatched on event
             })
         })
     </script>

@@ -46,3 +46,7 @@
     > NO CONSTRUCTOR is called. not destroyed in this process
 
 > Styling and dynamic styling /2.3 & /2.4 sections check
+
+## 3. Custom events
+- <code> Element.addEventListener('evtName', handlerFunction )</code>// ` handlerFunc`can be arrow or anonymous
+   > check /3.1/index.html js code comments
