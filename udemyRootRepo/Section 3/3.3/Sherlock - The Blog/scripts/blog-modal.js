@@ -42,8 +42,9 @@ class BlogModal extends HTMLElement {
                 this.dispatchEvent(closeEvent);
             }
             shadowRoot.addEventListener('close', () => {
-                wrapper.classList.remove('open');
-                this['open'] = false;
+                //here we upte with the undone changes(clsoe modal on close clickEvt)
+                wrapper.classList.remove('open'); //hide with css class
+                this['open'] = false; //REMEMBER to change property!!
             })
             if(this['open'] === true) {
                 instance.querySelector('.wrapper').classList.add('open');

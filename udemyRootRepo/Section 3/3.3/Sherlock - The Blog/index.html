@@ -103,13 +103,16 @@
         let cards = document.getElementsByTagName('blog-card');
         [...cards].forEach(card => {
             card.addEventListener('click', () => {
+                //we get the current card element and pass it's data to the modal
                 let currentBlog = titles.filter(title => title.title === card.getAttribute('title'));
                 let blogModal = document.querySelector('blog-modal');
                 blogModal.setAttribute('open', true);
                 blogModal.setAttribute('title', card.getAttribute('title'));
                 blogModal.setAttribute('subtitle', card.getAttribute('subtitle'));
                 blogModal.setAttribute('synopsis', currentBlog[0].synopsis);
-                blogModal.setAttribute('cover', currentBlog[0].cover);
+                blogModal.setAttribute('cover', currentBlog[0].cover); //this
+                // will raise error because the image it's not there when this component it's loaded
+                //so we will dafault it and initialize it to solve it
             })
         })
     </script>

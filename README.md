@@ -53,3 +53,5 @@
 
 - <code> new CustomEvent(name, dataObject) + addEvtListner + dispatchEvent()</code>// 
    > check /3.2/index.html + blog-modal.js comments
+- working example open close + HOW to pass DATA from parent to child component
+> check /3.3/index.html + blog-modal.js comments
