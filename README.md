@@ -59,9 +59,13 @@
 - > BoNUS ANIMATION:: simple spinner loader check video /3.4/ .css or with .js!!
 
 ## 4. implementing .js libs with webComponents
-- 4.1 REact.js // shadowDom == "Virtual Dom"
+### /4.1 + /4.2 REact.js
+-  // shadowDom == "Virtual Dom"
    - Remember: components can be **_declared as class or func_** check `/4.1/Main.js` vs `/4.1/components/BlogCardBody/BlogCardBody.js`. function components **DONT HAVE STATE!!**
    - i.g. `this.props.title` == `<BlogCardBody title="asdf">` this.props are the attributes
 - reaCT ||VS|| WEBCOMPONENTS 
 > frameworks insync components ||| encapsulation +reusability 
 - check working example with integrated `/web-components `
+
+### 4.3 Angular js
+- check `/4.3/*` module import + template use + comments on logic and impòrta availability

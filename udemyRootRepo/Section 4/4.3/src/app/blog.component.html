@@ -1,0 +1,63 @@
+<!-- Copied tempalte as is + styles -->
+<style>
+    .navbar {
+        background-color: #457477;
+        padding: 20px 40px;
+        color: #eee;
+        font-weight: bolder;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        margin-bottom: 10px;
+    }
+
+    .blog-card-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 80px;
+        padding: 0 15px;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+</style>
+
+<template id='card-template'>
+    <div class='card'>
+        <div class='header'>
+            <img class='cover' src='' />
+        </div>
+        <div class='content'>
+            <p class='title'></p>
+            <span class='subtitle'></span>
+        </div>
+    </div>
+</template>
+
+<div class='body'>
+    <div class='navbar'>
+        <!-- this is from angular component!!!!! and it works -->
+        {{title}}
+    </div>
+
+    <div class='blog-card-container'>
+        <blog-card 
+            title="The Five Orange Pips" 
+            subtitle="A delivery of innocous letter followed by death." 
+            cover="https://upload.wikimedia.org/wikipedia/commons/c/c8/Sherlock_Holmes_in_The_Five_Orange_Pips.jpg" 
+            open="true">
+        </blog-card>
+        <blog-card 
+            title="A Study in Scarlet" 
+            subtitle="Dr. John Watson meets Mr. Sherlock Holmes." 
+            cover="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/A_study_in_scarlet%2C_Plate_1.png/640px-A_study_in_scarlet%2C_Plate_1.png" 
+            open="true">
+        </blog-card>
+        <blog-card 
+            title="The Hound of the Baskervilles" 
+            subtitle="A mysterious hound terrifies a town." 
+            cover="https://www.oldbookillustrations.com/wp-content/uploads/2018/11/hound-baskervilles.jpg" 
+            open="true">
+        </blog-card>
+    </div>
+</div>
