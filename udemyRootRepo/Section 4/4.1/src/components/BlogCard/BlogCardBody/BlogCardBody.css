@@ -1,0 +1,17 @@
+.BlogBody {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.AuthorName {
+    color: #929191;
+}
+
+.Synopsis {
+    font-size: small;
+    overflow-y: scroll;
+    height: 60px;
+    margin-top: 10px;
+    cursor: default;
+}

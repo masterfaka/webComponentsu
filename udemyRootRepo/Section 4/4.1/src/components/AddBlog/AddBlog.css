@@ -1,0 +1,24 @@
+.AddBlog {
+    padding: 15px 20px;
+    /* text-align: center; */
+}
+
+.Submit {
+    height: 40px;
+    width: 100px;
+    background-color: #457477;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.Submit:focus {
+    outline: none;
+}
+
+.Submit:hover {
+    background-color: #519498;
+    box-shadow: 2px 2px 5px 2px #eee;
+}

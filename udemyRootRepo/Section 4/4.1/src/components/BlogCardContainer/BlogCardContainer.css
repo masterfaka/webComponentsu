@@ -1,0 +1,8 @@
+.BlogCardContainer {
+    display: flex;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-bottom: 1px solid #eee;
+    margin-top: 50px;
+}

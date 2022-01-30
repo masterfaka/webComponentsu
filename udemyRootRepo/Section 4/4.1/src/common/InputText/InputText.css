@@ -1,0 +1,23 @@
+
+input[type='text'], input[type='textarea'] {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+input[type='text']:focus, input[type='textarea']:focus {
+    outline: 1px solid #ddd;
+}
+
+input[type='textarea'] {
+    height: 300px;
+}
+
+.InputText {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}

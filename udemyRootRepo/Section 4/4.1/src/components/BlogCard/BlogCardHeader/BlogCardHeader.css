@@ -1,0 +1,23 @@
+.BlogHeader {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    justify-content: center;
+    background-color: #d8d3d3;
+    position: relative;
+}
+
+.BlogHeader img {
+    height: 200px;
+    width: 100%;
+}
+
+.TitleText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: x-large;
+    text-transform: capitalize;
+    margin-left: 10px;
+    text-shadow: 1px 1px #FF0000;
+}
